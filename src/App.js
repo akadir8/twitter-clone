@@ -1,12 +1,16 @@
-import './App.css';
+import React from "react";
+import Container from "./Layout/Container"
+import SideBar from "./Sidebar"
+import Feed from "./Feed";
+import Timeline from "./Timeline";
 
 function App() {
   return (
-    <div className="App">
-     <h1 className=" bg-slate-700 text-3xl font-bold text-white">
-      Hello world!
-    </h1>
-    </div>
+    <Container>
+    <SideBar/>
+    <Feed/>
+    <Timeline/>
+    </Container>
   );
 }
 
